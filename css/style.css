@@ -7027,7 +7027,6 @@ body.mini-navbar.fixed-sidebar .logo-element {
     z-index: 100;
     margin: 0 auto;
     padding-top: 7px;
-    padding-bottom: 123px;
 }
 
 .lockscreen.middle-box {
@@ -7062,6 +7061,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
 
 .middle-box h1 {
     font-size: 170px;
+    margin-top: 25px;
 }
 
 .wrapper .middle-box {
@@ -12042,28 +12042,36 @@ li:nth-child(even) {
 
 
 /* login page */
-
+html {
+     position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll !important;
+    z-index: 10;
+}
 html, body{
   height: 100%;
+
 }
 .loginDiv { 
-			background-image: url(../img/landing-page/landingPage1.jpg) ;
+			background-image: url(../img/landing-page/landingPage2.jpg) ;
 			background-position: center center;
 			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #999;
-  
-}
-
-@media (max-width: 690px) {
-   .loginDiv { 
-			background-image: url(../img/landing-page/landingPage1media.jpg) ;
-			background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #999;
+            background-size: 100% 100%;
+            background-color: #999;
+            height: 100vh;
+            
+        }
+        
+        @media (max-width: 690px) {
+            .loginDiv { 
+                background-image: url(../img/landing-page/landingPage1media.jpg) ;
+                background-position: center center;
+                background-repeat:  no-repeat;
+                background-color: #999;
+                background-size: 100% 100%;
 			
   
 }}
