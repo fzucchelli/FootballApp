@@ -1,14 +1,16 @@
 {
-  "name": "FootballApp",
+  "name": "youvincy",
   "version": "1.0.0",
-  "author": "fzucchelli",
-  "homepage": " https://fzucchelli.github.io/FootballApp/",
+  "main": "index.js",
+  "author": "Franco Zucchelli",
+  "license": "MIT",
+  "homepage": "http://fzucchelli.github.io/FootballApp",
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -19,7 +21,6 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
-    "extract-text-webpack-plugin": "^3.0.2",
     "firebase": "^5.7.0",
     "history": "^4.7.2",
     "live-server": "^1.2.0",
