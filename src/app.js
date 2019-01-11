@@ -147,6 +147,7 @@ firebase.auth().onAuthStateChanged(user => {
     });
   } else {
     store.dispatch(logout());
+    indexedDB.deleteDatabase("firebaseLocalStorageDb");
     renderApp();
     history.push("/");
   }
