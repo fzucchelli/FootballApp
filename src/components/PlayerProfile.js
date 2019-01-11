@@ -21,7 +21,7 @@ class PlayerProfile extends React.Component {
             <img
               alt="image"
               className="img-circle"
-              src={this.props.player.imgSrc}
+              src={"https://fzucchelli.github.io/FootballApp/"+this.props.player.imgSrc}
             />
           </div>
           <br />
