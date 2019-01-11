@@ -142,7 +142,6 @@ firebase.auth().onAuthStateChanged(user => {
       console.log(store.getState());
       renderApp();
       if (history.location.pathname === "/") {
-        indexedDB.deleteDatabase("firebaseLocalStorageDb");
         history.push("/dashboard");
       }
     });
@@ -152,6 +151,11 @@ firebase.auth().onAuthStateChanged(user => {
     history.push("/");
   }
 });
+
+window.addEventListener("beforeunload", (ev) => {
+  
+  return window.indexedDB.deleteDatabase("firebaseLocalStorageDb");
+})
 
 function newFunction() {
   console.log("idMatch" + idMatch);
