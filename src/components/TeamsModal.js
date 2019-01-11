@@ -104,7 +104,7 @@ export default class TeamsModal extends React.Component {
                       <img
                         alt="image"
                         className="img-circle"
-                        src="/img/teams/team-1.png"
+                        src={window.location.origin + "/img/teams/team-1.png"}
                       />
                     </div>
                     <br />
@@ -158,7 +158,7 @@ export default class TeamsModal extends React.Component {
                       <img
                         alt="image"
                         className="img-circle"
-                        src="/img/teams/team-2.png"
+                        src={window.location.origin + "/img/teams/team-2.png"}
                       />
                     </div>
                     <br />

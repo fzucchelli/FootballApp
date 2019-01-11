@@ -122,7 +122,7 @@ class CreateAgame extends React.Component {
                           <img
                             alt="image"
                             className="rounded-circle-create-game"
-                            src="/img/icons/boots.jpg"
+                            src={window.location.origin + "/img/icons/boots.jpg"}
                           />
                           <br />
                           Sport Centers
@@ -137,7 +137,7 @@ class CreateAgame extends React.Component {
                           <img
                             alt="image"
                             className="rounded-circle-create-game"
-                            src="/img/icons/clock.jpg"
+                            src={window.location.origin + "/img/icons/clock.jpg"}
                           />
                           <br />
                           Game Details
@@ -227,7 +227,7 @@ class CreateAgame extends React.Component {
                                   <img
                                     alt="image"
                                     className="rounded-circle"
-                                    src="/img/Mbappe.jpg" />
+                                    src={window.location.origin + "/img/Mbappe.jpg"} />
                                   />
                                   <div className="text-center">
                                     Kylian Mbappe'
@@ -246,7 +246,7 @@ class CreateAgame extends React.Component {
                                   <img
                                     alt="image"
                                     className="rounded-circle"
-                                    src="/img/Ronaldo.jpg"
+                                    src={window.location.origin + "/img/Ronaldo.jpg"}
                                   />
                                   <div className="text-center">
                                     Cristiano Ronaldo
@@ -265,7 +265,7 @@ class CreateAgame extends React.Component {
                                   <img
                                     alt="image"
                                     className="rounded-circle"
-                                    src="/img/pogba.jpg"
+                                    src={window.location.origin + "/img/pogba.jpg"}
                                   />
                                   <div className="text-center">
                                     Paul Pogba'
@@ -284,7 +284,7 @@ class CreateAgame extends React.Component {
                                   <img
                                     alt="image"
                                     className="rounded-circle"
-                                    src="/img/Beckham.jpg"
+                                    src={window.location.origin + "/img/Beckham.jpg"}
                                   />
                                   <div className="text-center">
                                     David Beckham
