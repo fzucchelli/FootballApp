@@ -142,12 +142,12 @@ firebase.auth().onAuthStateChanged(user => {
       console.log(store.getState());
       renderApp();
       if (history.location.pathname === "/") {
+        indexedDB.deleteDatabase("firebaseLocalStorageDb");
         history.push("/dashboard");
       }
     });
   } else {
     store.dispatch(logout());
-    indexedDB.deleteDatabase("firebaseLocalStorageDb");
     renderApp();
     history.push("/");
   }
